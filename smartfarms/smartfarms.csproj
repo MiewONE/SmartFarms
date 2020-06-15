@@ -115,29 +115,35 @@
     <Compile Include="setting.Designer.cs">
       <DependentUpon>setting.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucPanel_led.cs">
+    <Compile Include="Setting_pl\ucPanel_led.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucPanel_led.Designer.cs">
+    <Compile Include="Setting_pl\ucPanel_led.Designer.cs">
       <DependentUpon>ucPanel_led.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucPannel_Water.cs">
+    <Compile Include="Setting_pl\ucPanel_Water.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucPannel_Water.Designer.cs">
-      <DependentUpon>ucPannel_Water.cs</DependentUpon>
+    <Compile Include="Setting_pl\ucPanel_Water.Designer.cs">
+      <DependentUpon>ucPanel_Water.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucPannel_temp.cs">
+    <Compile Include="Setting_pl\ucPanel_temp.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucPannel_temp.Designer.cs">
-      <DependentUpon>ucPannel_temp.cs</DependentUpon>
+    <Compile Include="Setting_pl\ucPanel_temp.Designer.cs">
+      <DependentUpon>ucPanel_temp.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucPannel_Humi.cs">
+    <Compile Include="Setting_pl\ucPanel_Humi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucPannel_Humi.Designer.cs">
-      <DependentUpon>ucPannel_Humi.cs</DependentUpon>
+    <Compile Include="Setting_pl\ucPanel_Humi.Designer.cs">
+      <DependentUpon>ucPanel_Humi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_pl\ucPanel_fan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Setting_pl\ucPanel_fan.Designer.cs">
+      <DependentUpon>ucPanel_fan.cs</DependentUpon>
     </Compile>
     <Compile Include="variable.cs" />
     <EmbeddedResource Include="frm_Main.resx">
@@ -156,17 +162,20 @@
     <EmbeddedResource Include="setting.resx">
       <DependentUpon>setting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucPanel_led.resx">
+    <EmbeddedResource Include="Setting_pl\ucPanel_fan.resx">
+      <DependentUpon>ucPanel_fan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting_pl\ucPanel_led.resx">
       <DependentUpon>ucPanel_led.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucPannel_Humi.resx">
-      <DependentUpon>ucPannel_Humi.cs</DependentUpon>
+    <EmbeddedResource Include="Setting_pl\ucPanel_Humi.resx">
+      <DependentUpon>ucPanel_Humi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucPannel_temp.resx">
-      <DependentUpon>ucPannel_temp.cs</DependentUpon>
+    <EmbeddedResource Include="Setting_pl\ucPanel_temp.resx">
+      <DependentUpon>ucPanel_temp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucPannel_Water.resx">
-      <DependentUpon>ucPannel_Water.cs</DependentUpon>
+    <EmbeddedResource Include="Setting_pl\ucPanel_Water.resx">
+      <DependentUpon>ucPanel_Water.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

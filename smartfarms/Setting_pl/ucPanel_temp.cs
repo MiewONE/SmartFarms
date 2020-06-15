@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace smartfarms
 {
-    public partial class ucPannel_temp : UserControl
+    public partial class ucPanel_temp : UserControl
     {
-        private static ucPannel_temp _instance;
-        public static ucPannel_temp Instance
+        private static ucPanel_temp _instance;
+        public static ucPanel_temp Instance
         {
             get
             {
                 if (_instance == null)
                 {
-                    _instance = new ucPannel_temp();
+                    _instance = new ucPanel_temp();
                 }
                 return _instance;
             }
         }
-        public ucPannel_temp()
+        public ucPanel_temp()
         {
             InitializeComponent();
         }

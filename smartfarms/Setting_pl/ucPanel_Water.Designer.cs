@@ -1,6 +1,6 @@
 ﻿namespace smartfarms
 {
-    partial class ucPanel_led
+    partial class ucPanel_Water
     {
         /// <summary> 
         /// 필수 디자이너 변수입니다.
@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // ucPanel_led
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(344, 152);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 12);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "급수 패널입니다.";
+            // 
+            // ucPanel_Water
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "ucPanel_led";
+            this.Controls.Add(this.label1);
+            this.Name = "ucPanel_Water";
             this.Size = new System.Drawing.Size(784, 317);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }

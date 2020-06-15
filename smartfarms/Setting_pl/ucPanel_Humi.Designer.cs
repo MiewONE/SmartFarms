@@ -1,6 +1,6 @@
 ﻿namespace smartfarms
 {
-    partial class ucPannel_temp
+    partial class ucPanel_Humi
     {
         /// <summary> 
         /// 필수 디자이너 변수입니다.
@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // ucPannel_temp
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(305, 124);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "습도 패널입니다.";
+            // 
+            // ucPanel_Humi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "ucPannel_temp";
+            this.Controls.Add(this.label1);
+            this.Name = "ucPanel_Humi";
             this.Size = new System.Drawing.Size(784, 317);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }

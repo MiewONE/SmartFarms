@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace smartfarms
 {
-    public partial class ucPannel_Water : UserControl
+    public partial class ucPanel_Water : UserControl
     {
-        private static ucPannel_Water _instance;
-        public static ucPannel_Water Instance
+        private static ucPanel_Water _instance;
+        public static ucPanel_Water Instance
         {
             get
             {
                 if (_instance == null)
                 {
-                    _instance = new ucPannel_Water();
+                    _instance = new ucPanel_Water();
                 }
                 return _instance;
             }
         }
-        public ucPannel_Water()
+        public ucPanel_Water()
         {
             InitializeComponent();
         }
