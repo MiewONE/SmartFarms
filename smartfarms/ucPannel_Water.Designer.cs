@@ -1,6 +1,6 @@
 ﻿namespace smartfarms
 {
-    partial class ucPanel_led
+    partial class ucPannel_Water
     {
         /// <summary> 
         /// 필수 디자이너 변수입니다.
@@ -30,11 +30,11 @@
         {
             this.SuspendLayout();
             // 
-            // ucPanel_led
+            // ucPannel_Water
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "ucPanel_led";
+            this.Name = "ucPannel_Water";
             this.Size = new System.Drawing.Size(784, 317);
             this.ResumeLayout(false);
 

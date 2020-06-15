@@ -44,6 +44,7 @@
             this.tbx_humi_stopsec = new System.Windows.Forms.TextBox();
             this.tbx_humi_stopmin = new System.Windows.Forms.TextBox();
             this.tbx_humi_stophour = new System.Windows.Forms.TextBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pl_temp = new System.Windows.Forms.Panel();
             this.tbx_runMin = new System.Windows.Forms.TextBox();
             this.tbx_temp_Low = new System.Windows.Forms.TextBox();
@@ -53,41 +54,40 @@
             this.tbx_stopSec = new System.Windows.Forms.TextBox();
             this.tbx_stopMin = new System.Windows.Forms.TextBox();
             this.tbx_stopHour = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pl_led = new System.Windows.Forms.Panel();
-            this.pl_water = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbx_numbers = new System.Windows.Forms.ListBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pbx_temp = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pl_led = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pl_water = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.lbx_numbers = new System.Windows.Forms.ListBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pb_apply = new System.Windows.Forms.PictureBox();
             this.pb_close = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pl_humi.SuspendLayout();
-            this.pl_temp.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.pl_led.SuspendLayout();
-            this.pl_water.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.pl_temp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_temp)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.pl_led.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.pl_water.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_apply)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -170,9 +170,10 @@
             this.pl_humi.Controls.Add(this.tbx_humi_stopmin);
             this.pl_humi.Controls.Add(this.tbx_humi_stophour);
             this.pl_humi.Controls.Add(this.pictureBox7);
-            this.pl_humi.Location = new System.Drawing.Point(12, 66);
+            this.pl_humi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_humi.Location = new System.Drawing.Point(0, 43);
             this.pl_humi.Name = "pl_humi";
-            this.pl_humi.Size = new System.Drawing.Size(80, 72);
+            this.pl_humi.Size = new System.Drawing.Size(784, 317);
             this.pl_humi.TabIndex = 18;
             // 
             // tbx_humi_startmin
@@ -262,6 +263,15 @@
             this.tbx_humi_stophour.TabIndex = 5;
             this.tbx_humi_stophour.Text = "00";
             this.tbx_humi_stophour.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(784, 317);
+            this.pictureBox7.TabIndex = 13;
+            this.pictureBox7.TabStop = false;
             // 
             // pl_temp
             // 
@@ -367,6 +377,15 @@
             this.tbx_stopHour.Text = "00";
             this.tbx_stopHour.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // pbx_temp
+            // 
+            this.pbx_temp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx_temp.Location = new System.Drawing.Point(0, 0);
+            this.pbx_temp.Name = "pbx_temp";
+            this.pbx_temp.Size = new System.Drawing.Size(230, 229);
+            this.pbx_temp.TabIndex = 13;
+            this.pbx_temp.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
@@ -381,117 +400,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(784, 43);
             this.panel3.TabIndex = 17;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.pl_led);
-            this.panel2.Controls.Add(this.pl_water);
-            this.panel2.Controls.Add(this.pl_humi);
-            this.panel2.Controls.Add(this.pl_temp);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.lbx_numbers);
-            this.panel2.Location = new System.Drawing.Point(0, 81);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(784, 360);
-            this.panel2.TabIndex = 20;
-            // 
-            // pl_led
-            // 
-            this.pl_led.Controls.Add(this.textBox17);
-            this.pl_led.Controls.Add(this.textBox21);
-            this.pl_led.Controls.Add(this.textBox23);
-            this.pl_led.Controls.Add(this.textBox24);
-            this.pl_led.Controls.Add(this.textBox18);
-            this.pl_led.Controls.Add(this.pictureBox9);
-            this.pl_led.Location = new System.Drawing.Point(305, 114);
-            this.pl_led.Name = "pl_led";
-            this.pl_led.Size = new System.Drawing.Size(230, 229);
-            this.pl_led.TabIndex = 19;
-            // 
-            // pl_water
-            // 
-            this.pl_water.Controls.Add(this.label1);
-            this.pl_water.Controls.Add(this.tbx_water_period);
-            this.pl_water.Controls.Add(this.pictureBox8);
-            this.pl_water.Location = new System.Drawing.Point(661, 253);
-            this.pl_water.Name = "pl_water";
-            this.pl_water.Size = new System.Drawing.Size(230, 229);
-            this.pl_water.TabIndex = 19;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(473, 134);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 33);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "일";
-            // 
-            // lbx_numbers
-            // 
-            this.lbx_numbers.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.lbx_numbers.Font = new System.Drawing.Font("굴림", 40F);
-            this.lbx_numbers.FormattingEnabled = true;
-            this.lbx_numbers.ItemHeight = 53;
-            this.lbx_numbers.Location = new System.Drawing.Point(3, 311);
-            this.lbx_numbers.MultiColumn = true;
-            this.lbx_numbers.Name = "lbx_numbers";
-            this.lbx_numbers.Size = new System.Drawing.Size(111, 57);
-            this.lbx_numbers.TabIndex = 15;
-            this.lbx_numbers.Visible = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pb_apply);
-            this.panel1.Controls.Add(this.pb_close);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 81);
-            this.panel1.TabIndex = 19;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(230, 229);
-            this.pictureBox9.TabIndex = 13;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(230, 229);
-            this.pictureBox8.TabIndex = 13;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(80, 72);
-            this.pictureBox7.TabIndex = 13;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pbx_temp
-            // 
-            this.pbx_temp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx_temp.Location = new System.Drawing.Point(0, 0);
-            this.pbx_temp.Name = "pbx_temp";
-            this.pbx_temp.Size = new System.Drawing.Size(230, 229);
-            this.pbx_temp.TabIndex = 13;
-            this.pbx_temp.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -543,6 +451,99 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.pl_led);
+            this.panel2.Controls.Add(this.pl_water);
+            this.panel2.Controls.Add(this.pl_humi);
+            this.panel2.Controls.Add(this.pl_temp);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.lbx_numbers);
+            this.panel2.Location = new System.Drawing.Point(0, 81);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(784, 360);
+            this.panel2.TabIndex = 20;
+            // 
+            // pl_led
+            // 
+            this.pl_led.Controls.Add(this.textBox17);
+            this.pl_led.Controls.Add(this.textBox21);
+            this.pl_led.Controls.Add(this.textBox23);
+            this.pl_led.Controls.Add(this.textBox24);
+            this.pl_led.Controls.Add(this.textBox18);
+            this.pl_led.Controls.Add(this.pictureBox9);
+            this.pl_led.Location = new System.Drawing.Point(305, 114);
+            this.pl_led.Name = "pl_led";
+            this.pl_led.Size = new System.Drawing.Size(230, 229);
+            this.pl_led.TabIndex = 19;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(230, 229);
+            this.pictureBox9.TabIndex = 13;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pl_water
+            // 
+            this.pl_water.Controls.Add(this.label1);
+            this.pl_water.Controls.Add(this.tbx_water_period);
+            this.pl_water.Controls.Add(this.pictureBox8);
+            this.pl_water.Location = new System.Drawing.Point(661, 253);
+            this.pl_water.Name = "pl_water";
+            this.pl_water.Size = new System.Drawing.Size(230, 229);
+            this.pl_water.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(473, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 33);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "일";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(230, 229);
+            this.pictureBox8.TabIndex = 13;
+            this.pictureBox8.TabStop = false;
+            // 
+            // lbx_numbers
+            // 
+            this.lbx_numbers.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.lbx_numbers.Font = new System.Drawing.Font("굴림", 40F);
+            this.lbx_numbers.FormattingEnabled = true;
+            this.lbx_numbers.ItemHeight = 53;
+            this.lbx_numbers.Location = new System.Drawing.Point(3, 311);
+            this.lbx_numbers.MultiColumn = true;
+            this.lbx_numbers.Name = "lbx_numbers";
+            this.lbx_numbers.Size = new System.Drawing.Size(111, 57);
+            this.lbx_numbers.TabIndex = 15;
+            this.lbx_numbers.Visible = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pb_apply);
+            this.panel1.Controls.Add(this.pb_close);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(784, 81);
+            this.panel1.TabIndex = 19;
+            // 
             // pb_apply
             // 
             this.pb_apply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(99)))), ((int)(((byte)(59)))));
@@ -587,24 +588,24 @@
             this.Text = "setting";
             this.pl_humi.ResumeLayout(false);
             this.pl_humi.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.pl_temp.ResumeLayout(false);
             this.pl_temp.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.pl_led.ResumeLayout(false);
-            this.pl_led.PerformLayout();
-            this.pl_water.ResumeLayout(false);
-            this.pl_water.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_temp)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.pl_led.ResumeLayout(false);
+            this.pl_led.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.pl_water.ResumeLayout(false);
+            this.pl_water.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb_apply)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

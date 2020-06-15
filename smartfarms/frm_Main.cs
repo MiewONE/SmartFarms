@@ -71,10 +71,10 @@ namespace smartfarms
             label1.Font = font;
             label8.Font = font;
 
-            Control[,] backclr = new Control[4, 2]
-            {
-                { pl_icon_first, pl_time_first}
-            };
+            //Control[,] backclr = new Control[4, 2]
+            //{
+            //    { pl_icon_first, pl_time_first}
+            //};
             pl_icon_first.BackColor = cr;
             pl_time_first.BackColor = cr;
         }
