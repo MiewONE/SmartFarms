@@ -31,7 +31,7 @@
     + 소프트웨어 구성
 
 ## 목표일정
-    ![목표일정](https://user-images.githubusercontent.com/51110811/84993924-e2609000-b184-11ea-9c92-4d77834e8bd0.JPG)
+![목표일정](https://user-images.githubusercontent.com/51110811/84993924-e2609000-b184-11ea-9c92-4d77834e8bd0.JPG)
 ## 현재일정
 
 
