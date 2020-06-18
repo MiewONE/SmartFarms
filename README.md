@@ -9,10 +9,8 @@
     참여인원 : 박원균 , 손준영
         상세정보
             이름 : 박원균
-            학번 : 15110068
             업무 : Data 보관및 응용을 위한 Server 구축 및 Control box 와 연계담당
             이름 : 손준영
-            학번 : 15110073
             업무 : 제어부분의 센서들과 구현부 , User lnterface 담당
 
 
@@ -29,6 +27,9 @@
 
 ## SW , HW 구성
     + 하드웨어 구성
+<img src="https://user-images.githubusercontent.com/51110811/85028459-0e483980-b1b6-11ea-9ba2-9e8d68375f86.jpg" height="300px" title="캐드 도면" alt="RubberDuck"></img><br/>
+<img src="https://user-images.githubusercontent.com/51110811/85028481-14d6b100-b1b6-11ea-943e-18ad0a30dcae.jpg" height="300px" title="하드웨어 구성도" alt="RubberDuck"></img><br/>
+
     + 소프트웨어 구성
 
 ## 목표일정
