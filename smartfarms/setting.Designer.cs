@@ -62,7 +62,7 @@
             this.pl_settingBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pl_settingBack.Location = new System.Drawing.Point(0, 43);
             this.pl_settingBack.Name = "pl_settingBack";
-            this.pl_settingBack.Size = new System.Drawing.Size(784, 317);
+            this.pl_settingBack.Size = new System.Drawing.Size(800, 356);
             this.pl_settingBack.TabIndex = 18;
             // 
             // lbx_numbers
@@ -90,7 +90,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(784, 43);
+            this.panel3.Size = new System.Drawing.Size(800, 43);
             this.panel3.TabIndex = 17;
             // 
             // pB_Led
@@ -160,10 +160,11 @@
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.pl_settingBack);
             this.panel2.Controls.Add(this.panel3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 81);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(784, 360);
+            this.panel2.Size = new System.Drawing.Size(800, 399);
             this.panel2.TabIndex = 20;
             // 
             // panel1
@@ -175,7 +176,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 81);
+            this.panel1.Size = new System.Drawing.Size(800, 81);
             this.panel1.TabIndex = 19;
             // 
             // pb_apply
@@ -205,7 +206,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(784, 81);
+            this.pictureBox1.Size = new System.Drawing.Size(800, 81);
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
@@ -213,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 441);
+            this.ClientSize = new System.Drawing.Size(800, 480);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

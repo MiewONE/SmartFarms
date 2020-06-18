@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Main));
-            this.cP_temp = new CircularProgressBar.CircularProgressBar();
-            this.cP_humi = new CircularProgressBar.CircularProgressBar();
+            //this.cP_temp = new CircularProgressBar.CircularProgressBar();
+            //this.cP_humi = new CircularProgressBar.CircularProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pl_time = new System.Windows.Forms.Panel();
@@ -106,71 +106,71 @@
             // 
             // cP_temp
             // 
-            this.cP_temp.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.cP_temp.AnimationSpeed = 500;
-            this.cP_temp.BackColor = System.Drawing.Color.White;
-            this.cP_temp.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cP_temp.ForeColor = System.Drawing.Color.Black;
-            this.cP_temp.InnerColor = System.Drawing.Color.White;
-            this.cP_temp.InnerMargin = 2;
-            this.cP_temp.InnerWidth = -1;
-            this.cP_temp.Location = new System.Drawing.Point(176, 72);
-            this.cP_temp.MarqueeAnimationSpeed = 1000;
-            this.cP_temp.Name = "cP_temp";
-            this.cP_temp.OuterColor = System.Drawing.Color.Gray;
-            this.cP_temp.OuterMargin = -25;
-            this.cP_temp.OuterWidth = 20;
-            this.cP_temp.ProgressColor = System.Drawing.Color.Salmon;
-            this.cP_temp.ProgressWidth = 20;
-            this.cP_temp.SecondaryFont = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cP_temp.Size = new System.Drawing.Size(150, 150);
-            this.cP_temp.StartAngle = 270;
-            this.cP_temp.Step = 1;
-            this.cP_temp.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.cP_temp.SubscriptColor = System.Drawing.Color.Black;
-            this.cP_temp.SubscriptMargin = new System.Windows.Forms.Padding(0, -60, 0, 0);
-            this.cP_temp.SubscriptText = "온도";
-            this.cP_temp.SuperscriptColor = System.Drawing.Color.Black;
-            this.cP_temp.SuperscriptMargin = new System.Windows.Forms.Padding(10, 25, 0, 0);
-            this.cP_temp.SuperscriptText = "°C";
-            this.cP_temp.TabIndex = 58;
-            this.cP_temp.Text = "10";
-            this.cP_temp.TextMargin = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.cP_temp.Value = 20;
-            // 
-            // cP_humi
-            // 
-            this.cP_humi.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.cP_humi.AnimationSpeed = 500;
-            this.cP_humi.BackColor = System.Drawing.Color.Transparent;
-            this.cP_humi.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cP_humi.ForeColor = System.Drawing.Color.Black;
-            this.cP_humi.InnerColor = System.Drawing.Color.White;
-            this.cP_humi.InnerMargin = 2;
-            this.cP_humi.InnerWidth = -1;
-            this.cP_humi.Location = new System.Drawing.Point(66, 209);
-            this.cP_humi.MarqueeAnimationSpeed = 1000;
-            this.cP_humi.Name = "cP_humi";
-            this.cP_humi.OuterColor = System.Drawing.Color.Gray;
-            this.cP_humi.OuterMargin = -25;
-            this.cP_humi.OuterWidth = 20;
-            this.cP_humi.ProgressColor = System.Drawing.Color.DodgerBlue;
-            this.cP_humi.ProgressWidth = 20;
-            this.cP_humi.SecondaryFont = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cP_humi.Size = new System.Drawing.Size(150, 150);
-            this.cP_humi.StartAngle = 270;
-            this.cP_humi.Step = 1;
-            this.cP_humi.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.cP_humi.SubscriptColor = System.Drawing.Color.Black;
-            this.cP_humi.SubscriptMargin = new System.Windows.Forms.Padding(0, -60, 0, 0);
-            this.cP_humi.SubscriptText = "습도";
-            this.cP_humi.SuperscriptColor = System.Drawing.Color.Black;
-            this.cP_humi.SuperscriptMargin = new System.Windows.Forms.Padding(10, 25, 0, 0);
-            this.cP_humi.SuperscriptText = "%";
-            this.cP_humi.TabIndex = 60;
-            this.cP_humi.Text = "10";
-            this.cP_humi.TextMargin = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.cP_humi.Value = 20;
+            //this.cP_temp.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            //this.cP_temp.AnimationSpeed = 500;
+            //this.cP_temp.BackColor = System.Drawing.Color.White;
+            //this.cP_temp.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.cP_temp.ForeColor = System.Drawing.Color.Black;
+            //this.cP_temp.InnerColor = System.Drawing.Color.White;
+            //this.cP_temp.InnerMargin = 2;
+            //this.cP_temp.InnerWidth = -1;
+            //this.cP_temp.Location = new System.Drawing.Point(176, 72);
+            //this.cP_temp.MarqueeAnimationSpeed = 1000;
+            //this.cP_temp.Name = "cP_temp";
+            //this.cP_temp.OuterColor = System.Drawing.Color.Gray;
+            //this.cP_temp.OuterMargin = -25;
+            //this.cP_temp.OuterWidth = 20;
+            //this.cP_temp.ProgressColor = System.Drawing.Color.Salmon;
+            //this.cP_temp.ProgressWidth = 20;
+            //this.cP_temp.SecondaryFont = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.cP_temp.Size = new System.Drawing.Size(150, 150);
+            //this.cP_temp.StartAngle = 270;
+            //this.cP_temp.Step = 1;
+            //this.cP_temp.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            //this.cP_temp.SubscriptColor = System.Drawing.Color.Black;
+            //this.cP_temp.SubscriptMargin = new System.Windows.Forms.Padding(0, -60, 0, 0);
+            //this.cP_temp.SubscriptText = "온도";
+            //this.cP_temp.SuperscriptColor = System.Drawing.Color.Black;
+            //this.cP_temp.SuperscriptMargin = new System.Windows.Forms.Padding(10, 25, 0, 0);
+            //this.cP_temp.SuperscriptText = "°C";
+            //this.cP_temp.TabIndex = 58;
+            //this.cP_temp.Text = "10";
+            //this.cP_temp.TextMargin = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            //this.cP_temp.Value = 20;
+            //// 
+            //// cP_humi
+            //// 
+            ////this.cP_humi.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            //this.cP_humi.AnimationSpeed = 500;
+            //this.cP_humi.BackColor = System.Drawing.Color.Transparent;
+            //this.cP_humi.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.cP_humi.ForeColor = System.Drawing.Color.Black;
+            //this.cP_humi.InnerColor = System.Drawing.Color.White;
+            //this.cP_humi.InnerMargin = 2;
+            //this.cP_humi.InnerWidth = -1;
+            //this.cP_humi.Location = new System.Drawing.Point(66, 209);
+            //this.cP_humi.MarqueeAnimationSpeed = 1000;
+            //this.cP_humi.Name = "cP_humi";
+            //this.cP_humi.OuterColor = System.Drawing.Color.Gray;
+            //this.cP_humi.OuterMargin = -25;
+            //this.cP_humi.OuterWidth = 20;
+            //this.cP_humi.ProgressColor = System.Drawing.Color.DodgerBlue;
+            //this.cP_humi.ProgressWidth = 20;
+            //this.cP_humi.SecondaryFont = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.cP_humi.Size = new System.Drawing.Size(150, 150);
+            //this.cP_humi.StartAngle = 270;
+            //this.cP_humi.Step = 1;
+            //this.cP_humi.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            //this.cP_humi.SubscriptColor = System.Drawing.Color.Black;
+            //this.cP_humi.SubscriptMargin = new System.Windows.Forms.Padding(0, -60, 0, 0);
+            //this.cP_humi.SubscriptText = "습도";
+            //this.cP_humi.SuperscriptColor = System.Drawing.Color.Black;
+            //this.cP_humi.SuperscriptMargin = new System.Windows.Forms.Padding(10, 25, 0, 0);
+            //this.cP_humi.SuperscriptText = "%";
+            //this.cP_humi.TabIndex = 60;
+            //this.cP_humi.Text = "10";
+            //this.cP_humi.TextMargin = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            //this.cP_humi.Value = 20;
             // 
             // label1
             // 
@@ -576,13 +576,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 480);
-            this.Controls.Add(this.cP_humi);
+            //this.Controls.Add(this.cP_humi);
             this.Controls.Add(this.pl_button);
             this.Controls.Add(this.pl_icon);
             this.Controls.Add(this.pl_time);
             this.Controls.Add(this.pb_btn_mode);
             this.Controls.Add(this.pb_btn_setting);
-            this.Controls.Add(this.cP_temp);
+            //this.Controls.Add(this.cP_temp);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pb_home);
@@ -632,8 +632,8 @@
         #endregion
         private System.Windows.Forms.PictureBox pb_sensor;
         private System.Windows.Forms.PictureBox pb_home;
-        private CircularProgressBar.CircularProgressBar cP_temp;
-        private CircularProgressBar.CircularProgressBar cP_humi;
+        //private CircularProgressBar.CircularProgressBar cP_temp;
+        //private CircularProgressBar.CircularProgressBar cP_humi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pb_btn_setting;

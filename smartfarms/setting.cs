@@ -25,7 +25,7 @@ namespace smartfarms
 
         private void pB_temp_MouseUp(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("Test");
+            
             if (!pl_settingBack.Controls.Contains(ucPanel_temp.Instance))
             {
                 pl_settingBack.Controls.Add(ucPanel_temp.Instance);
