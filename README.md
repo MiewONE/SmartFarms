@@ -31,7 +31,7 @@
     + 소프트웨어 구성
 
 ## 목표일정
-    <img src="https://github.com/MiewONE/SmartFarms/blob/master/doit/%EB%AA%A9%ED%91%9C%EC%9D%BC%EC%A0%95.JPG?raw=true" title="목표일정" alt="plan"</img>
+
 ## 현재일정
 
 
