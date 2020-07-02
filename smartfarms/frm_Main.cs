@@ -16,8 +16,8 @@ namespace smartfarms
     public partial class frm_Main : Form
     {
         Image[][] img = new Image[7][];
-        
 
+        DateTime dt = new DateTime();
         public const int thermo = 0;
         public const int led = 1;
         public const int fan = 2;
@@ -61,8 +61,12 @@ namespace smartfarms
             //img[5][ 0] = Properties.Resources.펌프_2_black;
             //img[5][ 1] = Properties.Resources.Color_펌프_2;
 
+            
             InitializeComponent();
 
+            
+            tbar_humi.Maximum = 100;
+            tbar_temp.Maximum = 100;
             lb_time_humi.Font = font;
             lb_time_led.Font = font;
             lb_time_pan.Font = font;
@@ -82,6 +86,19 @@ namespace smartfarms
         private void frm_Main_Load(object sender, EventArgs e)
         {
             this.Size = new Size(800, 480);
+            if(!DB.Instance.DBcon())
+            {
+                tb_db.AppendText("False");
+                    //.Text = "False";//데이터베이스 연결확인을 위한 라벨 삭제 상관없음.
+            }
+            else
+            {
+                tb_db.AppendText("true");
+                DB.Instance.DBorTable_Create();
+                tb_db.AppendText("테이블 생성완료.");
+            }
+            bwork_data.RunWorkerAsync();
+            
         }
 
 
@@ -122,20 +139,52 @@ namespace smartfarms
         private void pb_btn_mode_MouseUp(object sender, MouseEventArgs e)
         {
             
-            if (variable.Mode == 0)
+            if (variable.Instance.Mode == 0)
             {
                 pb_btn_mode.Image = global::smartfarms.Properties.Resources.mode_autoo;
-                variable.Mode = 1;
+                variable.Instance.Mode = 1;
                 pl_button.Visible = false;
             }
             else
             {
                 pb_btn_mode.Image = global::smartfarms.Properties.Resources.mode_3;
-                variable.Mode = 0;
+                variable.Instance.Mode = 0;
                 pl_button.Visible = true;
             }
                 
         }
 
+        private void bwork_data_DoWork(object sender, DoWorkEventArgs e)
+        {
+            //MessageBox.Show(DateTime.Now.ToString());
+            while(true)
+            {
+                if (tbar_temp.InvokeRequired && tbar_humi.InvokeRequired)
+                {
+                    tbar_temp.Invoke(new MethodInvoker(delegate ()
+                    {
+                        DB.Instance.query_execute($"insert into save_state(temperature,humidity,Datetimes) values({tbar_temp.Value},{tbar_humi.Value},'{DateTime.Now.ToString()}')", "insert");
+                        //시간이 PRI기 때문에 꼭 넣어줘야함 - 아님 
+                    }));
+                }
+                else
+                {
+                    DB.Instance.query_execute($"insert into save_state(temperature,humidity) values({tbar_temp.Value},{tbar_humi.Value})", "insert");
+                }
+                Thread.Sleep(variable.Instance.set_savetime);//데이터 저장 주기 지정해야함.
+            }
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(bwork_data.IsBusy)
+            {
+                bwork_data.CancelAsync();
+                bwork_data.Dispose();
+            }
+            Application.Exit();
+        }
     }
 }

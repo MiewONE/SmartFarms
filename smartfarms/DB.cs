@@ -8,10 +8,24 @@ namespace smartfarms
 {
     class DB
     {
+        private static DB _instance;
+        public static DB Instance
+        {
+            get
+            {
+                if(_instance==null)
+                {
+                    _instance = new DB();
+                }
+                return _instance;
+            }
+        }
         static public MySqlConnection con = null;
         static public MySqlCommand cmd = null;
-        string db_ip = "localhost", db_id = "testbot", db_pwd = "123", db_port = "3306";
-
+        string db_ip = "miewonedb.crqmbd0kai3v.us-east-1.rds.amazonaws.com", db_id = "miewone", db_pwd = "tlqkfdk156", db_port = "3306";
+        public DB()
+        {
+        }
         public DB(string _para_db_ip, string _para_db_id, string _para_db_pwd, string _para_db_port)
         {
             this.db_ip = _para_db_ip;
@@ -19,11 +33,20 @@ namespace smartfarms
             this.db_pwd = _para_db_pwd;
             this.db_port = _para_db_port;
         }
-        public void DBcon()
+        public bool DBcon()
         {
-            string conString = string.Format($"SERVER={db_ip};user={db_id};password={db_pwd};port={db_port};");
-            con = new MySqlConnection(conString);
-            con.Open();
+            try
+            {
+                string conString = string.Format($"SERVER={db_ip};user={db_id};password={db_pwd};port={db_port};");
+                con = new MySqlConnection(conString);
+                con.Open();
+                return con.State == System.Data.ConnectionState.Open;
+            }
+            catch
+            {
+                return false;
+            }
+            
         }
         static public void query_execute(string _para_query)
         {
@@ -39,7 +62,7 @@ namespace smartfarms
                 con.Open();
             }
         }
-        static public void query_execute(string _para_query, string mode)
+        public void query_execute(string _para_query, string mode)
         {
             Con_Open();
             switch (mode)
@@ -50,40 +73,40 @@ namespace smartfarms
                     //System.Windows.Forms.MessageBox.Show(rd.Read().ToString());
                     if (rd.Read())
                     {
-                        variable.runTimeHH = (int?)rd["runTimeHH"] ?? 0;
-                        variable.runTimeMM = (int?)rd["runTimeMM"] ?? 0;
-                        variable.runTimeSS = (int?)rd["runTimeSS"] ?? 0;
-                        variable.stoptimeHH = (int?)rd["stoptimeHH"] ?? 0;
-                        variable.stoptimeMM = (int?)rd["stoptimeMM"] ?? 0;
-                        variable.stoptimeSS = (int?)rd["stoptimeSS"] ?? 0;
-                        variable.auto_TempLOW = (int?)rd["auto_TempLOW"] ?? 0;
-                        variable.auto_TempHIGH = (int?)rd["auto_TempHIGH"] ?? 0;
-                        variable.auto_HumLOW = (int?)rd["auto_HumLOW"] ?? 0;
-                        variable.auto_HumHIGH = (int?)rd["auto_HumHIGH"] ?? 0;
-                        variable.save_period = (int?)rd["save_period"] ?? 0;
-                        if (variable.save_period == 0 || variable.save_period == null)
+                        variable.Instance.runTimeHH = (int?)rd["runTimeHH"] ?? 0;
+                        variable.Instance.runTimeMM = (int?)rd["runTimeMM"] ?? 0;
+                        variable.Instance.runTimeSS = (int?)rd["runTimeSS"] ?? 0;
+                        variable.Instance.stoptimeHH = (int?)rd["stoptimeHH"] ?? 0;
+                        variable.Instance.stoptimeMM = (int?)rd["stoptimeMM"] ?? 0;
+                        variable.Instance.stoptimeSS = (int?)rd["stoptimeSS"] ?? 0;
+                        variable.Instance.auto_TempLOW = (int?)rd["auto_TempLOW"] ?? 0;
+                        variable.Instance.auto_TempHIGH = (int?)rd["auto_TempHIGH"] ?? 0;
+                        variable.Instance.auto_HumLOW = (int?)rd["auto_HumLOW"] ?? 0;
+                        variable.Instance.auto_HumHIGH = (int?)rd["auto_HumHIGH"] ?? 0;
+                        variable.Instance.save_period = (int?)rd["save_period"] ?? 0;
+                        if (variable.Instance.save_period == 0 || variable.Instance.save_period == null)
                         {
-                            variable.save_period = 1000;
+                            variable.Instance.save_period = 1000;
                         }
-                        variable.Pump_period = (int?)rd["PumP_period"] ?? 0;
+                        variable.Instance.Pump_period = (int?)rd["PumP_period"] ?? 0;
 
-                        variable.avg_tmp = (int)((variable.auto_TempHIGH + variable.auto_TempLOW) / 2);
-                        variable.avg_hum = (int)((variable.auto_HumHIGH + variable.auto_HumLOW) / 2);
+                        variable.Instance.avg_tmp = (int)((variable.Instance.auto_TempHIGH + variable.Instance.auto_TempLOW) / 2);
+                        variable.Instance.avg_hum = (int)((variable.Instance.auto_HumHIGH + variable.Instance.auto_HumLOW) / 2);
                     }
                     else
                     {
-                        variable.runTimeHH = 00;
-                        variable.runTimeMM = 00;
-                        variable.runTimeSS = 00;
-                        variable.stoptimeHH = 00;
-                        variable.stoptimeMM = 00;
-                        variable.stoptimeSS = 00;
-                        variable.auto_TempLOW = 00;
-                        variable.auto_TempHIGH = 00;
-                        variable.auto_HumLOW = 00;
-                        variable.auto_HumHIGH = 00;
-                        variable.save_period = 1000;
-                        variable.Pump_period = 00;
+                        variable.Instance.runTimeHH = 00;
+                        variable.Instance.runTimeMM = 00;
+                        variable.Instance.runTimeSS = 00;
+                        variable.Instance.stoptimeHH = 00;
+                        variable.Instance.stoptimeMM = 00;
+                        variable.Instance.stoptimeSS = 00;
+                        variable.Instance.auto_TempLOW = 00;
+                        variable.Instance.auto_TempHIGH = 00;
+                        variable.Instance.auto_HumLOW = 00;
+                        variable.Instance.auto_HumHIGH = 00;
+                        variable.Instance.save_period = 1000;
+                        variable.Instance.Pump_period = 00;
                     }
                     break;
                 case "insert":
@@ -110,9 +133,8 @@ namespace smartfarms
                     "humidity int," +
                     "Fan bool," +
                     "Pump bool," +
-                    "times varchar(20)," +
-                    "dates varchar(20)" +
-                    ");");
+                    "Datetimes varchar(50)"+
+                    ");"); 
                 query_execute("create table if not exists setting (" +
                     "runtimeHH int," +
                     "runtimeMM int," +
@@ -163,7 +185,7 @@ namespace smartfarms
                 con.Close();
             }
         }
-        static void save_state()
+        void save_state()
         {
 
         }
