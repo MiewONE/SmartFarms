@@ -22,7 +22,7 @@ namespace smartfarms
         }
         static public MySqlConnection con = null;
         static public MySqlCommand cmd = null;
-        string db_ip = "miewonedb.crqmbd0kai3v.us-east-1.rds.amazonaws.com", db_id = "miewone", db_pwd = "tlqkfdk156", db_port = "3306";
+        string db_ip =
         public DB()
         {
         }
