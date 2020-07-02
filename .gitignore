@@ -6,6 +6,7 @@
 
 #DB파일
 ./smartfarms/DB.cs
+DB.cs
 # User-specific files
 *.rsuser
 *.suo
