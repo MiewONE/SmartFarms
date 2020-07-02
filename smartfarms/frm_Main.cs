@@ -171,7 +171,7 @@ namespace smartfarms
                 {
                     DB.Instance.query_execute($"insert into save_state(temperature,humidity) values({tbar_temp.Value},{tbar_humi.Value})", "insert");
                 }
-                Thread.Sleep(variable.Instance.set_savetime);//데이터 저장 주기 지정해야함.
+                Thread.Sleep(variable.Instance.set_savetime);//데이터 저장 주기 지정해야함. 기본 주기 1초
             }
             
 
@@ -181,7 +181,7 @@ namespace smartfarms
         {
             if(bwork_data.IsBusy)
             {
-                bwork_data.CancelAsync();
+                //bwork_data.CancelAsync();
                 bwork_data.Dispose();
             }
             Application.Exit();
