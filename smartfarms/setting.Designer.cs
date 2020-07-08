@@ -42,6 +42,7 @@
             this.pb_apply = new System.Windows.Forms.PictureBox();
             this.pb_close = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pl_settingBack.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pB_Led)).BeginInit();
@@ -251,5 +252,6 @@
         private System.Windows.Forms.PictureBox pb_apply;
         private System.Windows.Forms.PictureBox pb_close;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

@@ -49,6 +49,6 @@ namespace smartfarms
 
 
         //데이터 저장 주기
-        public int set_savetime = 1000; //단위 ms
+        public int set_savetime = 1*1000; //단위 ms
     }
 }

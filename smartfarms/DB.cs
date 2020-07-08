@@ -22,7 +22,7 @@ namespace smartfarms
         }
         static public MySqlConnection con = null;
         static public MySqlCommand cmd = null;
-        string db_ip = 
+        string db_ip = "";
         public DB()
         {
         }
