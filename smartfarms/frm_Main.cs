@@ -16,8 +16,8 @@ namespace smartfarms
     public partial class frm_Main : Form
     {
         Image[][] img = new Image[7][];
+        
 
-        DateTime dt = new DateTime();
         public const int thermo = 0;
         public const int led = 1;
         public const int fan = 2;
@@ -61,12 +61,8 @@ namespace smartfarms
             //img[5][ 0] = Properties.Resources.펌프_2_black;
             //img[5][ 1] = Properties.Resources.Color_펌프_2;
 
-            
             InitializeComponent();
 
-            
-            tbar_humi.Maximum = 100;
-            tbar_temp.Maximum = 100;
             lb_time_humi.Font = font;
             lb_time_led.Font = font;
             lb_time_pan.Font = font;
@@ -75,30 +71,29 @@ namespace smartfarms
             label1.Font = font;
             label8.Font = font;
 
-            //Control[,] backclr = new Control[4, 2]
-            //{
-            //    { pl_icon_first, pl_time_first}
+            //Control[,] backclr = new Control[4, 2] 
+            //{ 
+            //    { pl_icon_first, pl_time_first} 
             //};
             pl_icon_first.BackColor = cr;
             pl_time_first.BackColor = cr;
+            InitializeComponent();
+
+            timer1.Interval = 1000;
+            timer1.Enabled = true;
+            timer1.Tick += Timer1_Tick;
+
+            // this는 Form1을 가리킴
+            this.BackColor = Color.LightSteelBlue;
+            this.Text = "myDigitalClock";
+
+            label6.Text = DateTime.Now.ToString();
+            label6.TextAlign = ContentAlignment.MiddleCenter;
         }
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
             this.Size = new Size(800, 480);
-            if(!DB.Instance.DBcon())
-            {
-                tb_db.AppendText("False");
-                    //.Text = "False";//데이터베이스 연결확인을 위한 라벨 삭제 상관없음.
-            }
-            else
-            {
-                tb_db.AppendText("true");
-                DB.Instance.DBorTable_Create();
-                tb_db.AppendText("테이블 생성완료.");
-            }
-            bwork_data.RunWorkerAsync();
-            
         }
 
 
@@ -139,52 +134,78 @@ namespace smartfarms
         private void pb_btn_mode_MouseUp(object sender, MouseEventArgs e)
         {
             
-            if (variable.Instance.Mode == 0)
+            if (variable.Mode == 0)
             {
                 pb_btn_mode.Image = global::smartfarms.Properties.Resources.mode_autoo;
-                variable.Instance.Mode = 1;
+                variable.Mode = 1;
                 pl_button.Visible = false;
             }
             else
             {
                 pb_btn_mode.Image = global::smartfarms.Properties.Resources.mode_3;
-                variable.Instance.Mode = 0;
+                variable.Mode = 0;
                 pl_button.Visible = true;
             }
                 
         }
 
-        private void bwork_data_DoWork(object sender, DoWorkEventArgs e)
+        private void pb_btn_on_pan_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(DateTime.Now.ToString());
-            while(true)
-            {
-                if (tbar_temp.InvokeRequired && tbar_humi.InvokeRequired)
-                {
-                    tbar_temp.Invoke(new MethodInvoker(delegate ()
-                    {
-                        DB.Instance.query_execute($"insert into save_state(temperature,humidity,Datetimes) values({tbar_temp.Value},{tbar_humi.Value},'{DateTime.Now.ToString()}')", "insert");
-                        //시간이 PRI기 때문에 꼭 넣어줘야함 - 아님 
-                    }));
-                }
-                else
-                {
-                    DB.Instance.query_execute($"insert into save_state(temperature,humidity) values({tbar_temp.Value},{tbar_humi.Value})", "insert");
-                }
-                Thread.Sleep(variable.Instance.set_savetime);//데이터 저장 주기 지정해야함. 기본 주기 1초
-            }
-            
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pb_btn_setting_Click(object sender, EventArgs e)
         {
-            if(bwork_data.IsBusy)
-            {
-                //bwork_data.CancelAsync();
-                bwork_data.Dispose();
-            }
-            Application.Exit();
+
+        }
+                private void pl_icon_Paint(object sender, PaintEventArgs e)
+        {
+                    }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+     
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_time_led_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -127,11 +127,23 @@
   <data name="home_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="제목 없음-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\제목 없음-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="led_2_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\led_2_black.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="color_led_greenorange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\color_led_greenorange.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\111.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12345" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12345.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="온습도계_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\온습도계_black.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,17 +154,14 @@
   <data name="title1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\icons\title.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="white_습도" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\icons\white_습도.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="color_led_greenYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\color_led_greenYellow.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mode_change" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\icons\mode_change.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HOME_BACK2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\icons\HOME_BACK2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="title2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\icons\btn_off.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +175,17 @@
   <data name="se_2_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\icons\se_2_back.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="난방기" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\난방기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color_습도_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color_습도_blue.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fan_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\icons\fan_black_3030.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="온도계_yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\온도계_yellow.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,14 +196,17 @@
   <data name="mode_autoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\icons\mode_autoo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="난방기" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\난방기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="white_습도" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\icons\white_습도.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="습도_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\icons\습도_black.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="white_난방기" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\icons\white_난방기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="123451" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\123451.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Color_fan_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Color_fan_white.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,13 +226,19 @@
   <data name="습도_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\습도_color.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="color_습도_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\color_습도_blue.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HOME_BACK2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\icons\HOME_BACK2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="whtie_water" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\icons\whtie_water.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home_3_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\icons\home_3_white.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="se_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\icons\se_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="제목 없음-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\제목 없음-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

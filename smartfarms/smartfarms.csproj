@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>smartfarms</RootNamespace>
     <AssemblyName>smartfarms</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -115,35 +116,11 @@
     <Compile Include="setting.Designer.cs">
       <DependentUpon>setting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Setting_pl\ucPanel_led.cs">
+    <Compile Include="ucPanel_led.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Setting_pl\ucPanel_led.Designer.cs">
+    <Compile Include="ucPanel_led.Designer.cs">
       <DependentUpon>ucPanel_led.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Setting_pl\ucPanel_Water.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Setting_pl\ucPanel_Water.Designer.cs">
-      <DependentUpon>ucPanel_Water.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Setting_pl\ucPanel_temp.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Setting_pl\ucPanel_temp.Designer.cs">
-      <DependentUpon>ucPanel_temp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Setting_pl\ucPanel_Humi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Setting_pl\ucPanel_Humi.Designer.cs">
-      <DependentUpon>ucPanel_Humi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Setting_pl\ucPanel_fan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Setting_pl\ucPanel_fan.Designer.cs">
-      <DependentUpon>ucPanel_fan.cs</DependentUpon>
     </Compile>
     <Compile Include="variable.cs" />
     <EmbeddedResource Include="frm_Main.resx">
@@ -162,20 +139,8 @@
     <EmbeddedResource Include="setting.resx">
       <DependentUpon>setting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Setting_pl\ucPanel_fan.resx">
-      <DependentUpon>ucPanel_fan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Setting_pl\ucPanel_led.resx">
+    <EmbeddedResource Include="ucPanel_led.resx">
       <DependentUpon>ucPanel_led.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Setting_pl\ucPanel_Humi.resx">
-      <DependentUpon>ucPanel_Humi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Setting_pl\ucPanel_temp.resx">
-      <DependentUpon>ucPanel_temp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Setting_pl\ucPanel_Water.resx">
-      <DependentUpon>ucPanel_Water.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -273,10 +238,34 @@
     <None Include="UI\icons\title.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\12345.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="UI\icons\home_3_white.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123451.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\icons\se_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\제목 없음-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\제목 없음-2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
