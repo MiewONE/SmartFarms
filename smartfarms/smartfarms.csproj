@@ -157,9 +157,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="font\NanumSquareRoundEB.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="UI\icons\main_back.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -266,6 +263,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\제목 없음-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\New_UI\물음표.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farmmin1g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farmmin1sg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\New_UI\히터_ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\New_UI\가습기_ON.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
