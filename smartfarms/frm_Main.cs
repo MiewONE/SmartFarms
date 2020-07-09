@@ -135,69 +135,14 @@ namespace smartfarms
             }
                 
         }
-
-        private void pb_btn_on_pan_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pb_btn_setting_Click(object sender, EventArgs e)
-        {
-
-        }
-                private void pl_icon_Paint(object sender, PaintEventArgs e)
-        {
-                    }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-     
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox33_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_time_led_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pb_logo_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pb_setting_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
