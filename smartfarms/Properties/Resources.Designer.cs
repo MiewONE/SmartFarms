@@ -93,26 +93,6 @@ namespace smartfarms.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap color_led_greenYellow {
-            get {
-                object obj = ResourceManager.GetObject("color_led_greenYellow", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap fan_black {
-            get {
-                object obj = ResourceManager.GetObject("fan_black", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap farmmin1sg {
             get {
                 object obj = ResourceManager.GetObject("farmmin1sg", resourceCulture);
@@ -156,6 +136,16 @@ namespace smartfarms.Properties {
         internal static System.Drawing.Bitmap se_1 {
             get {
                 object obj = ResourceManager.GetObject("se_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap se_1_2 {
+            get {
+                object obj = ResourceManager.GetObject("se_1_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

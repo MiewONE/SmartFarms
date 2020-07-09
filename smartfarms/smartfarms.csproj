@@ -279,5 +279,8 @@
   <ItemGroup>
     <None Include="UI\New_UI\가습기_ON.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\icons\se_1_2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

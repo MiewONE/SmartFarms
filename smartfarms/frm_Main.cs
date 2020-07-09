@@ -100,18 +100,9 @@ namespace smartfarms
             return DateTime.Now;
         }
 
-        private void pb_btn_setting_MouseDown(object sender, MouseEventArgs e)
-        {
-            pb_btn_setting.Image = global::smartfarms.Properties.Resources.se_2_back;
-        }
 
-        private void pb_btn_setting_MouseUp(object sender, MouseEventArgs e)
-        {
-            var set = new setting();
-            pb_btn_setting.Image = global::smartfarms.Properties.Resources.se_2;
-            set.Show();
-            
-        }
+
+
 
         private void pb_btn_mode_MouseDown(object sender, MouseEventArgs e)
         {
@@ -143,6 +134,16 @@ namespace smartfarms
         private void pb_setting_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pb_setting_MouseDown(object sender, MouseEventArgs e)
+        {
+            pb_setting.Image = global::smartfarms.Properties.Resources.btn_on;
+        }
+
+        private void pb_setting_MouseUp(object sender, MouseEventArgs e)
+        {
+            pb_setting.Image = global::smartfarms.Properties.Resources.btn_off;
         }
     }
 }
