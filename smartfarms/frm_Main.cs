@@ -162,11 +162,6 @@ namespace smartfarms
         {
                     }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -193,17 +188,17 @@ namespace smartfarms
 
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox33_Click(object sender, EventArgs e)
         {
 
         }
 
         private void lb_time_led_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
         {
 
         }
