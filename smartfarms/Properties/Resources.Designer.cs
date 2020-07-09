@@ -93,26 +93,6 @@ namespace smartfarms.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap Color_fan_white {
-            get {
-                object obj = ResourceManager.GetObject("Color_fan_white", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap color_led_greenorange {
-            get {
-                object obj = ResourceManager.GetObject("color_led_greenorange", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap color_led_greenYellow {
             get {
                 object obj = ResourceManager.GetObject("color_led_greenYellow", resourceCulture);
@@ -146,16 +126,6 @@ namespace smartfarms.Properties {
         internal static System.Drawing.Bitmap home_3_white {
             get {
                 object obj = ResourceManager.GetObject("home_3_white", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap HOME_BACK2 {
-            get {
-                object obj = ResourceManager.GetObject("HOME_BACK2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,49 +183,9 @@ namespace smartfarms.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap title {
-            get {
-                object obj = ResourceManager.GetObject("title", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap title1 {
-            get {
-                object obj = ResourceManager.GetObject("title1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap title2 {
             get {
                 object obj = ResourceManager.GetObject("title2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap water_2 {
-            get {
-                object obj = ResourceManager.GetObject("water_2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap white_fan_2 {
-            get {
-                object obj = ResourceManager.GetObject("white_fan_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
