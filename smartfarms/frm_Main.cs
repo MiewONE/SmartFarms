@@ -131,19 +131,58 @@ namespace smartfarms
             Application.Exit();
         }
 
+<<<<<<< HEAD
         private void pb_setting_Click(object sender, EventArgs e)
         {
 
         }
 
         private void pb_setting_MouseDown(object sender, MouseEventArgs e)
+=======
+        private void pictureBox2_Click(object sender, EventArgs e)
+>>>>>>> 4da59fcd9883526befaf64392706d0b761b2b65a
         {
             pb_setting.Image = global::smartfarms.Properties.Resources.btn_on;
         }
 
         private void pb_setting_MouseUp(object sender, MouseEventArgs e)
         {
+<<<<<<< HEAD
             pb_setting.Image = global::smartfarms.Properties.Resources.btn_off;
+=======
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+     
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_time_led_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> 4da59fcd9883526befaf64392706d0b761b2b65a
         }
     }
 }

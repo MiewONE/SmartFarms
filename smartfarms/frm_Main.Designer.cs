@@ -75,6 +75,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.label12 = new System.Windows.Forms.Label();
             this.pb_logo = new System.Windows.Forms.PictureBox();
             this.pb_title = new System.Windows.Forms.PictureBox();
@@ -87,6 +88,13 @@
             this.pb_btn_setting = new System.Windows.Forms.PictureBox();
             this.pl_heater.SuspendLayout();
             this.plin_heater.SuspendLayout();
+=======
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+>>>>>>> 4da59fcd9883526befaf64392706d0b761b2b65a
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel2.SuspendLayout();
@@ -119,6 +127,7 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_title)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_auto)).BeginInit();
@@ -128,6 +137,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_help)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_setting)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_btn_setting)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+>>>>>>> 4da59fcd9883526befaf64392706d0b761b2b65a
             this.SuspendLayout();
             // 
             // pl_heater
@@ -720,12 +734,33 @@
             this.pb_btn_setting.TabIndex = 74;
             this.pb_btn_setting.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(532, 56);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(49, 46);
+            this.button1.TabIndex = 118;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.pictureBox16_Click);
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Location = new System.Drawing.Point(532, 56);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(49, 45);
+            this.pictureBox16.TabIndex = 119;
+            this.pictureBox16.TabStop = false;
+            // 
             // frm_Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 480);
+<<<<<<< HEAD
             this.Controls.Add(this.pb_logo);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pl_pump);
@@ -738,6 +773,21 @@
             this.Controls.Add(this.pb_auto);
             this.Controls.Add(this.pb_usercontrol);
             this.Controls.Add(this.pb_mode);
+=======
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox16);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox21);
+            this.Controls.Add(this.pictureBox20);
+            this.Controls.Add(this.pictureBox1);
+>>>>>>> 4da59fcd9883526befaf64392706d0b761b2b65a
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pb_help);
             this.Controls.Add(this.pb_setting);
@@ -784,6 +834,7 @@
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_title)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_auto)).EndInit();
@@ -793,6 +844,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_help)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_setting)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_btn_setting)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+>>>>>>> 4da59fcd9883526befaf64392706d0b761b2b65a
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -855,6 +911,13 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox11;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox16;
+>>>>>>> 4da59fcd9883526befaf64392706d0b761b2b65a
     }
 }
 
